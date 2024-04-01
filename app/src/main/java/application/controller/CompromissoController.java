@@ -13,4 +13,9 @@ public class CompromissoController {
     public String teste(@PathVariable("data") @DateTimeFormat(pattern = "dd-MM-yyyy") Date data) {
         return "Retorno: " + data;
     }
+
+    @GetMapping("/teste2/{data}")
+    public String teste2(@PathVariable("data") Date data) {
+        return "Retorno: " + data;
+    }
 }
